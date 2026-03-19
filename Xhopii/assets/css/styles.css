@@ -10,7 +10,7 @@
 }
 header nav h1
 {
-    color: #d9d9d9;
+    color: white;
 }
 header nav img
 {
@@ -36,4 +36,26 @@ header nav ul li a
     align-items: flex-start;
     text-decoration: none;
     color: #ff5a2c;
+}
+.produto-imagem
+{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.produto-imagem aside:first-child
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.produto-imagem aside:first-child img
+{
+    width: 60px;
+    cursor: pointer;
+    border: 1px solid;
+}
+.produto-imagem img
+{
+    width: 300px;
 }
