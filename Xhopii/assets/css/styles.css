@@ -11,6 +11,7 @@
 header nav h1
 {
     color: white;
+    font-size: 50px;    
 }
 header nav img
 {
@@ -58,4 +59,14 @@ header nav ul li a
 .produto-imagem img
 {
     width: 300px;
+}
+.preco
+{
+    color: #ff5a2c;
+    font-size: 30px;
+}
+main section button
+{
+    background-color: #ff5a2c;
+    color: white;
 }
