@@ -70,8 +70,14 @@ main section button
     background-color: #ff5a2c;
     color: white;
 }
-
+/* Css da pagina home*/
 .home
 {
     color: #ff5a2c;
+}
+/* Css da pagina login*/
+.entre
+{
+    background-color: #ff5a2c;
+    color: white;
 }
