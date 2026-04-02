@@ -10,7 +10,7 @@
     --cor-segundaria: #ffffff;
 
 }
-.topo
+.header-padrao
 {
     background-color: var(--cor-primaria);
     color: --;
@@ -71,6 +71,14 @@ header nav ul li a
 {
     color: #ff5a2c;
     font-size: 30px;
+}
+.produto-button
+{
+    display: flex;
+    text-decoration: none;
+    align-items: flex-start;
+    padding: 10px 30px;
+    
 }
 main section button
 {
