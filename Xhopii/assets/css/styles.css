@@ -7,7 +7,7 @@
 :root
 {
     --cor-primaria: #ff5a33;
-    --cor-segundaria: #ffffff;
+    --cor-secundaria: #ffffff;
 
 }
 .header-padrao
@@ -15,9 +15,21 @@
     background-color: var(--cor-primaria);
     color: --;
 }
+.header-padrao nav {
+    background-color: #333333;
+    padding: 15px 20px;
+}
+.header-padrao section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6600;
+    padding: 15px 40px;
+    color: #ffffff;
+}
 header nav h1
 {
-    color: var(--cor-segundaria);
+    color: var(--cor-secundaria);
     font-size: 50px;    
 }
 header nav img
