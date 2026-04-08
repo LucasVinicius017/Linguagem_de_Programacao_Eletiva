@@ -3,57 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xhopii | Login</title>
+    <title>Xhopii | Ver Produtos</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="login-view">
-    <!-- Special Header for Login -->
-    <header class="auth-header">
-        <aside>
-            <a href="../../home.html">
-                <img src="../imagem/logo.png" alt="Xhopii Logo">
-                <h1>Xhopii</h1>
-            </a>
-            <span>Entre</span>
-        </aside>
-        <a href="#" class="help-link">Precisa de ajuda?</a>
+<body class="layout-centralizado">
+    <!-- Top Header -->
+    <header>
+        <a href="../../home.html">
+            <img src="../imagem/logo.png" alt="Xhopii Logo">
+            <h1>Xhopii</h1>
+        </a>
+        <button id="logout-btn">Sair</button>
     </header>
 
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="cadastrocliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastrofuncionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastroproduto.html">Cadastro Produto</a></li>
+            <li><a href="#">Ver Clientes</a></li>
+            <li><a href="#">Ver Funcionários</a></li>
+            <li><a href="verprodutos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <main>
-        <section class="login-card">
-            <h2>Login</h2>
-            
-            <input type="email" placeholder="Email / Telefone / Nome de usuário">
-            <input type="password" placeholder="Senha">
-            
-            <button class="btn-entre" onclick="window.location.href='../../home.html'">ENTRE</button>
-            
-            <section class="extra-links">
-                <a href="redefinirsenha.html">Esqueci minha senha</a>
-                <a href="#">Fazer login com SMS</a>
-            </section>
-            
-            <section class="divider">OU</section>
-            
-            <section class="social-login">
-                <button type="button">
-                    <span>f</span> Facebook
-                </button>
-                <button type="button">
-                    <span>G</span> Google
-                </button>
-                <button type="button">
-                    <span></span> Apple
-                </button>
-            </section>
-            
-            <p class="signup-prompt">
-                Novo na Xhopii? <a href="cadastrocliente.html">Cadastrar</a>
-            </p>
+        <section id="products-section">
+            <h2>Produtos</h2>
+            <section id="products-grid"></section>
         </section>
     </main>
 
-    <!-- Standard Footer -->
+    <!-- Footer Content -->
     <footer id="main-footer">
         <section id="footer-links">
             <aside>
@@ -107,9 +91,6 @@
                 </section>
             </aside>
         </section>
-        <p style="text-align: center; color: #999; font-size: 11px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
-            © 2023 Xhopii. Todos os direitos acadêmicos reservados
-        </p>
     </footer>
 
     <script src="../js/script.js"></script>

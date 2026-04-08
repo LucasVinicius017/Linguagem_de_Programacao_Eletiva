@@ -1,67 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii | Mês do Consumidor</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Home</title>
 </head>
 <body>
-    <header class="header-padrao">
-    <section>
-        <a href="#">
-            <img src="/Xhopii/assets/imagem/logo.png" alt="Logo">
+    <!-- Top Header -->
+    <header>
+        <a href="home.html">
+            <img src="assets/imagem/logo.png" alt="Xhopii Logo">
             <h1>Xhopii</h1>
         </a>
-        <p>Sair</p>
-    </section>
-    
-    <nav class="barra-navegacao">
-        <ul>
-            <li>Home</li>
-            <li>Cadastro Cliente</li>
-            <li>Cadastro Funcionário</li>
-            <li>Cadastro Produto</li>
-            <li>Ver Clientes</li>
-            <li>Ver Funcionários</li>
-            <li>Ver Produtos</li>
-        </ul>
-    </nav>
+        <button id="logout-btn">Sair</button>
     </header>
 
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="assets/view/cadastrocliente.html">Cadastro Cliente</a></li>
+            <li><a href="assets/view/cadastrofuncionario.html">Cadastro Funcionário</a></li>
+            <li><a href="assets/view/cadastroproduto.html">Cadastro Produto</a></li>
+            <li><a href="#">Ver Clientes</a></li>
+            <li><a href="#">Ver Funcionários</a></li>
+            <li><a href="assets/view/verprodutos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <main>
+        <!-- Image Carousel -->
+        <section id="carousel-container">
+            <article id="carousel-slides">
+                <figure><img src="assets/imagem/carousel-1.jpg" alt="Xhopii mês do consumidor"></figure>
+                <figure><img src="assets/imagem/carousel-2.jpg" alt="Promoção 2"></figure>
+                <figure><img src="assets/imagem/carousel-3.jpg" alt="Promoção 3"></figure>
+                <figure><img src="assets/imagem/carousel-4.jpg" alt="Promoção 4"></figure>
+            </article>
+            <aside id="carousel-nav">
+                <button id="prev-btn">&lt;</button>
+                <button id="next-btn">&gt;</button>
+            </aside>
+        </section>
 
+        <!-- Promo Banner -->
+        <section id="promo-banner">
+            <img src="assets/imagem/home-promocao.png" alt="Exclusivo na 1ª compra">
+        </section>
+
+        <!-- Product Grid -->
+        <section id="products-section">
+            <h2>Descobertas do Dia</h2>
+            <section id="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 7 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 8 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 9 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+                <!-- Product 10 -->
+                <article class="product-card">
+                    <img src="assets/imagem/produto1.png" alt="Camisa Front-End CSS">
+                    <h3>Camisa Desenvolvedor Front-End CSS</h3>
+                    <footer>
+                        <span class="price">R$ 59,90</span>
+                        <span class="stock">171 disponíveis</span>
+                    </footer>
+                </article>
+            </section>
+        </section>
     </main>
-    <footer>
-        <h3>ATENDIMENTO AO CLIENTE</h3>
-        <p>Central de ajuda</p>
-        <p>Como Comprar</p>
-        <p>Métodos de Pagamento</p>
-        <p>Garantia Xhopii</p>
-        <p>Devolução e Reembolso</p>
-        <p>Fale Conosco</p>
-        <p>Ouvidoria</p>
 
-        <h3>SOBRE A XHOPII</h3>
-        <p>Sobre Nós</p>
-        <p>Politicas Xhopii</p>
-        <p>Politicas de Privacidade</p>
-        <p>Programa de Aliados da Xhopii</p>
-        <p>Seja um Entregador Xhopii</p>
-        <p>Ofertas Relâmpago</p>
-        <p>Xhopii Blog</p>
-        <p>Impresa</p>
-
-        <h3>PAGAMENTO</h3>
-
-        <h3>SIGA-NOS</h3>
-        <p>Instagram</p>
-        <p>Twitter</p>
-        <p>Facebook</p>
-        <p>YouTube</p>
-        <p>Linkedin</p>
-
-        <h3>ATENDIMENTO AO CLIENTE</h3>
+    <!-- Footer Content -->
+    <footer id="main-footer">
+        <section id="footer-links">
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <p>Central de Ajuda</p>
+                <p>Como Comprar</p>
+                <p>Métodos de Pagamento</p>
+                <p>Garantia Xhopii</p>
+                <p>Devolução e Reembolso</p>
+                <p>Fale Conosco</p>
+                <p>Ouvidoria</p>
+            </aside>
+            <aside>
+                <h3>Sobre a Xhopii</h3>
+                <p>Sobre Nós</p>
+                <p>Políticas Xhopii</p>
+                <p>Política de Privacidade</p>
+                <p>Programa de Aliados</p>
+                <p>Entregador Xhopii</p>
+                <p>Ofertas Relâmpago</p>
+                <p>Xhopii Blog</p>
+            </aside>
+            <aside>
+                <h3>Pagamento</h3>
+                <section id="footer-extra">
+                    <img src="assets/imagem/logo-pix.png" alt="Pix">
+                    <img src="assets/imagem/logo-boleto.png" alt="Boleto">
+                    <img src="assets/imagem/logo-american-express.png" alt="Amex">
+                    <img src="assets/imagem/logo-visa.png" alt="Visa">
+                    <img src="assets/imagem/logo-mastercard.png" alt="Mastercard">
+                    <img src="assets/imagem/logo-hipercard.png" alt="Hipercard">
+                    <img src="assets/imagem/logo-elo.png" alt="Elo">
+                </section>
+            </aside>
+            <aside>
+                <h3>Siga-nos</h3>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>YouTube</p>
+                <p>LinkedIn</p>
+            </aside>
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <section id="qr-code">
+                    <img src="assets/imagem/qr-code.png" alt="QR Code">
+                    <section id="app-buttons">
+                        <img src="assets/imagem/logo-google-play.png" alt="Google Play">
+                        <img src="assets/imagem/logo-store-apple.png" alt="App Store">
+                    </section>
+                </section>
+            </aside>
+        </section>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

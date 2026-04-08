@@ -1,64 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css" alt="estilocss">
-        <title>Produto</title>
-    </head>
-    <body>
-        <header class="header-padrao">
-            <nav>
-                <img src="assets/imagem/logo.png" alt="logo">
-                <h1>Xhopii</h1>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cadastro Cliente</a></li>
-                    <li><a href="">Cadastro Funcionário</a></li>
-                    <li><a href="">Cadastro Produto</a></li>
-                    <li><a href="">Ver Clientes</a></li>
-                    <li><a href="">Ver Funcionários</a></li>
-                    <li><a href="">Ver Produtos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="produto-imagem">
-                <aside>
-                    <img src="../imagem/produto1.png" >
-                    <img src="../imagem/produto2.png" >
-                    <img src="../imagem/produto3.png" >
-                    <img src="../imagem/produto4.png" >
-                    <img src="../imagem/produto5.png" >
-                </aside>
-                <figure class="produto-principal">
-                    <img id="imgPrincipal" src="../assets/imagem/produto1.png" alt="">
-                </figure>
-                <Article class="produto-info">
-                    <h2>Camisa Desenvolvedor Front-End CSS</h2>
-                    <p class="preco">R$ 56,90</p>
-                    <p>171 peças disponiveis</p>
-                    <p>Modelos:</p>
-                    <ul class="produto-button">
-                        <li><a href="">Preto</a></li>
-                        <li><a href="">Azul</a></li>
-                        <li><a href="">Verde</a></li>
-                        <li><a href="">Cinza</a></li>
-                        <li><a href="">Rosa</a></li>
-                    </ul>
-                    <p>Tamanhos</p>
-                    <ul class="produto-button">
-                        <li><a href="pequeno">P</a></li>
-                        <li><a href="maior">M</a></li>
-                        <li><a href="grande">G</a></li>
-                        <li><a href="extragrande">GG</a></li>
-                    </ul>
-                    <button>Compre Agora</button>
-                </Article>
-            </section>
-        </main>
-        <footer>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii | Detalhes do Produto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="produto-detalhe-view">
+    <!-- Top Header -->
+    <header>
+        <a href="../../home.html">
+            <img src="../imagem/logo.png" alt="Xhopii Logo">
+            <h1>Xhopii</h1>
+        </a>
+        <button id="logout-btn">Sair</button>
+    </header>
 
-        </footer>
-    </body>
-    </html>
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="cadastrocliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastrofuncionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastroproduto.html">Cadastro Produto</a></li>
+            <li><a href="#">Ver Clientes</a></li>
+            <li><a href="#">Ver Funcionários</a></li>
+            <li><a href="verprodutos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="produto-imagem">
+            <aside>
+                <img src="../imagem/produto1.png" alt="Miniatura 1" class="active">
+                <img src="../imagem/produto2.png" alt="Miniatura 2">
+                <img src="../imagem/produto3.png" alt="Miniatura 3">
+                <img src="../imagem/produto4.png" alt="Miniatura 4">
+                <img src="../imagem/produto5.png" alt="Miniatura 5">
+            </aside>
+            <figure class="produto-principal">
+                <img id="imgPrincipal" src="../imagem/produto1.png" alt="Camisa Desenvolvedor">
+            </figure>
+            <article class="produto-info">
+                <h2>Camisa Desenvolvedor Front-End CSS</h2>
+                <p class="preco">R$56,90</p>
+                <p class="stock">171 peças disponíveis</p>
+                
+                <p>Modelos:</p>
+                <ul class="produto-button">
+                    <li><a href="#">Preto</a></li>
+                    <li><a href="#">Azul</a></li>
+                    <li><a href="#">Verde</a></li>
+                    <li><a href="#">Cinza</a></li>
+                    <li><a href="#">Rosa</a></li>
+                </ul>
+                
+                <p>Tamanhos:</p>
+                <ul class="produto-button">
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">GG</a></li>
+                </ul>
+                <p id="tamanho-selecionado">Tamanho Selecionado: P</p>
+                <button id="buy-now">Comprar Agora</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+        <section id="footer-links">
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <p>Central de Ajuda</p>
+                <p>Como Comprar</p>
+                <p>Métodos de Pagamento</p>
+                <p>Garantia Xhopii</p>
+                <p>Devolução e Reembolso</p>
+                <p>Fale Conosco</p>
+                <p>Ouvidoria</p>
+            </aside>
+            <aside>
+                <h3>Sobre a Xhopii</h3>
+                <p>Sobre Nós</p>
+                <p>Políticas Xhopii</p>
+                <p>Política de Privacidade</p>
+                <p>Programa de Aliados</p>
+                <p>Entregador Xhopii</p>
+                <p>Ofertas Relâmpago</p>
+                <p>Xhopii Blog</p>
+            </aside>
+            <aside>
+                <h3>Pagamento</h3>
+                <section id="footer-extra">
+                    <img src="../imagem/logo-pix.png" alt="Pix">
+                    <img src="../imagem/logo-boleto.png" alt="Boleto">
+                    <img src="../imagem/logo-american-express.png" alt="Amex">
+                    <img src="../imagem/logo-visa.png" alt="Visa">
+                    <img src="../imagem/logo-mastercard.png" alt="Mastercard">
+                    <img src="../imagem/logo-hipercard.png" alt="Hipercard">
+                    <img src="../imagem/logo-elo.png" alt="Elo">
+                </section>
+            </aside>
+            <aside>
+                <h3>Siga-nos</h3>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>YouTube</p>
+                <p>LinkedIn</p>
+            </aside>
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <section id="qr-code">
+                    <img src="../imagem/qr-code.png" alt="QR Code">
+                    <section id="app-buttons">
+                        <img src="../imagem/logo-google-play.png" alt="Google Play">
+                        <img src="../imagem/logo-store-apple.png" alt="App Store">
+                    </section>
+                </section>
+            </aside>
+        </section>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
