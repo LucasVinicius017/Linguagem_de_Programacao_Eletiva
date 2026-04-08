@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Funcionário</title>
+    <title>Xhopii | Cadastrar Funcionário</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    
+<body class="layout-card-flutuante">
+    <!-- Top Header -->
+    <header>
+        <a href="../../home.html">
+            <img src="../imagem/logo.png" alt="Xhopii Logo">
+            <h1>Xhopii</h1>
+        </a>
+        <button id="logout-btn">Sair</button>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="cadastrocliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastrofuncionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastroproduto.html">Cadastro Produto</a></li>
+            <li><a href="#">Ver Clientes</a></li>
+            <li><a href="#">Ver Funcionários</a></li>
+            <li><a href="verprodutos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="form-card">
+            <h2>Cadastrar Funcionário</h2>
+            
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="CPF">
+            <input type="date" placeholder="dd/mm/aaaa">
+            <input type="text" placeholder="Telefone">
+            <input type="text" placeholder="Cargo / Função">
+            <input type="text" placeholder="Salário">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Senha">
+            
+            <label class="file-label">Selecionar foto de perfil:</label>
+            <section class="file-input-wrapper">
+                <button type="button" class="btn-file" onclick="document.getElementById('foto-perfil').click()">Escolher arquivo</button>
+                <span id="file-name" style="font-size: 13px; color: #666;">Nenhum arquivo escolhido</span>
+                <input type="file" id="foto-perfil" style="display: none;" onchange="document.getElementById('file-name').innerText = this.files[0].name">
+            </section>
+            
+            <button type="submit" class="btn-cadastrar">CADASTRAR</button>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+        <section id="footer-links">
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <p>Central de Ajuda</p>
+                <p>Como Comprar</p>
+                <p>Métodos de Pagamento</p>
+                <p>Garantia Xhopii</p>
+                <p>Devolução e Reembolso</p>
+                <p>Fale Conosco</p>
+                <p>Ouvidoria</p>
+            </aside>
+            <aside>
+                <h3>Sobre a Xhopii</h3>
+                <p>Sobre Nós</p>
+                <p>Políticas Xhopii</p>
+                <p>Política de Privacidade</p>
+                <p>Programa de Aliados</p>
+                <p>Entregador Xhopii</p>
+                <p>Ofertas Relâmpago</p>
+                <p>Xhopii Blog</p>
+            </aside>
+            <aside>
+                <h3>Pagamento</h3>
+                <section id="footer-extra">
+                    <img src="../imagem/logo-pix.png" alt="Pix">
+                    <img src="../imagem/logo-boleto.png" alt="Boleto">
+                    <img src="../imagem/logo-american-express.png" alt="Amex">
+                    <img src="../imagem/logo-visa.png" alt="Visa">
+                    <img src="../imagem/logo-mastercard.png" alt="Mastercard">
+                    <img src="../imagem/logo-hipercard.png" alt="Hipercard">
+                    <img src="../imagem/logo-elo.png" alt="Elo">
+                </section>
+            </aside>
+            <aside>
+                <h3>Siga-nos</h3>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>YouTube</p>
+                <p>LinkedIn</p>
+            </aside>
+            <aside>
+                <h3>Atendimento ao Cliente</h3>
+                <section id="qr-code">
+                    <img src="../imagem/qr-code.png" alt="QR Code">
+                    <section id="app-buttons">
+                        <img src="../imagem/logo-google-play.png" alt="Google Play">
+                        <img src="../imagem/logo-store-apple.png" alt="App Store">
+                    </section>
+                </section>
+            </aside>
+        </section>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
